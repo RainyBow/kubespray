@@ -5,7 +5,7 @@ https://github.com/containernetworking/plugins/releases/download/v1.0.1/cni-plug
 https://github.com/coreos/etcd/releases/download/v3.5.0/etcd-v3.5.0-linux-arm64.tar.gz
 https://github.com/k8sli/kubernetes/releases/download/v1.22.5-patch-1.0/kubeadm-linux-arm64
 https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.22.0/crictl-v1.22.0-linux-arm64.tar.gz
-https://github.com/opencontainers/runc/releases/download/v1.0.3/runc.arm64
+https://github.com/opencontainers/runc/releases/download/v1.1.4/runc.arm64
 https://github.com/projectcalico/calico/archive/v3.20.3.tar.gz
 https://github.com/projectcalico/calicoctl/releases/download/v3.20.3/calicoctl-linux-arm64
 https://storage.googleapis.com/kubernetes-release/release/v1.22.5/bin/linux/arm64/kubeadm
