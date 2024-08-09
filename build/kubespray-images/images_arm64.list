@@ -10,7 +10,7 @@ library/cilium-hubble-ui:v0.7.3
 library/cilium-init:2019-04-05
 library/cilium-operator:v1.9.11
 library/cluster-proportional-autoscaler-arm64:1.8.3
-library/coredns:v1.9.3
+library/coredns:1.11.3
 library/envoyproxy-envoy:v1.14.5
 library/flannel:v0.15.1-arm64
 library/kube-apiserver:v1.22.5
