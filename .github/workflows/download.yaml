@@ -138,7 +138,7 @@ jobs:
 
           source $GITHUB_ENV
           make list IMAGE_ARCH=amd64 ANSIBLE_ARCHITECTURE=x86_64
-          make list IMAGE_ARCH=arm64 ANSIBLE_ARCHITECTURE=aarch64
+          # make list IMAGE_ARCH=arm64 ANSIBLE_ARCHITECTURE=aarch64
 
           cat build/kubespray-images/* .github/workflows/download.yaml | md5sum | tr -d '\ -' | sed 's/^/IMAGES_MD5=md5-/' >> $GITHUB_ENV
           if skopeo inspect docker://${IMAGES_IMAGE_REPO}:${BRANCH_NAME} > mainfest.json; then
@@ -166,7 +166,7 @@ jobs:
           push: true
           context: .
           file: build/kubespray-images/Dockerfile
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new
           labels: IMAGES_MD5=${{ env.IMAGES_MD5 }}
