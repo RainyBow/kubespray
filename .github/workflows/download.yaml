@@ -49,6 +49,8 @@ jobs:
       - name: Prepare for build images
         shell: bash
         run: |
+          echo "FILES_IMAGE_REPO=$(echo ${{ env.FILES_IMAGE_REPO }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          echo "IMAGES_IMAGE_REPO=$(echo ${{ env.IMAGES_IMAGE_REPO }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
           git describe --tags --always | sed 's/^/IMAGE_TAG=/' >> $GITHUB_ENV
           git branch --show-current | sed 's/^/BRANCH_NAME=/' >> $GITHUB_ENV
           git branch --show-current | sed 's/master/latest/;s/main/latest/;s/^/IMAGE_TAG_BY_BRANCH=/' >> $GITHUB_ENV
@@ -103,6 +105,11 @@ jobs:
   download-images:
     runs-on: ubuntu-20.04
     steps:
+      - name: Set Env
+        shell: bash
+        run: |
+          echo "FILES_IMAGE_REPO=$(echo ${{ env.FILES_IMAGE_REPO }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          echo "IMAGES_IMAGE_REPO=$(echo ${{ env.IMAGES_IMAGE_REPO }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v2
         with:
