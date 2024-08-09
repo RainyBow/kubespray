@@ -127,9 +127,9 @@ The output should look like this:
 ```ShellSession
 $ kubectl get nodes
 NAME    STATUS   ROLES                  AGE     VERSION
-kub-1   Ready    control-plane,master   4m37s   v1.22.5
-kub-2   Ready    control-plane,master   4m7s    v1.22.5
-kub-3   Ready    <none>                 3m7s    v1.22.5
+kub-1   Ready    control-plane,master   4m37s   v1.26.1
+kub-2   Ready    control-plane,master   4m7s    v1.26.1
+kub-3   Ready    <none>                 3m7s    v1.26.1
 ```
 
 Another nice test is the following:
