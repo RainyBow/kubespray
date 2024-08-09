@@ -14,7 +14,7 @@ nerdctl_version: "0.15.0"
 etcd_version: v3.5.0
 cilium_version: "v1.9.11"
 runc_version: v1.1.4
-containerd_version: 1.5.8
+containerd_version: 1.7.20
 kubeadm_version: "{{ kube_version }}"
 kubeadm_patch_version: "{{ kube_version }}-patch-1.0"
 
