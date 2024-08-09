@@ -13,9 +13,9 @@ library/cluster-proportional-autoscaler-arm64:1.8.3
 library/coredns:v1.9.3
 library/envoyproxy-envoy:v1.14.5
 library/flannel:v0.15.1-arm64
-library/kube-apiserver:v1.26.1
-library/kube-controller-manager:v1.26.1
-library/kube-proxy:v1.26.1
-library/kube-scheduler:v1.26.1
+library/kube-apiserver:v1.22.5
+library/kube-controller-manager:v1.22.5
+library/kube-proxy:v1.22.5
+library/kube-scheduler:v1.22.5
 library/nginx:1.19
 library/pause:3.3
